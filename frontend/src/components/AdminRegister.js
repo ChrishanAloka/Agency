@@ -14,7 +14,7 @@ function AdminRegister() {
     setError('');
     setSuccess('');
     try {
-      await axios.post('http://localhost:5000/admin/register', { username, password });
+      await axios.post('https://agency-8ijs.onrender.com/admin/register', { username, password });
       setSuccess('Registration successful! Redirecting to login...');
       setTimeout(() => navigate('/admin-login'), 1500);
     } catch (err) {

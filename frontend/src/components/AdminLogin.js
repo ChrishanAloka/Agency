@@ -11,7 +11,7 @@ function AdminLogin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/admin/login', { username, password });
+      await axios.post('https://agency-8ijs.onrender.com/admin/login', { username, password });
       navigate('/admin-dashboard');
     } catch (err) {
       setError('Invalid credentials');
